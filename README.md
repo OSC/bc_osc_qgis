@@ -14,10 +14,10 @@ OnDemand node):
 - [Lmod] 6.0.1+ or any other `module purge` and `module load <modules>` based
   CLI used to load appropriate environments within the batch job before
   launching the container.
-- [QGIS image] ([GPL licensed](https://github.com/rafdouglas/qgis_desktop_docker/blob/3.8/LICENSE)) which provides [QGIS] version 3.8.0 
+- [rafdouglas/qgis_desktop] ([GPL licensed](https://github.com/rafdouglas/qgis_desktop_docker/blob/3.8/LICENSE)) which provides [QGIS] version 3.8.0 
 
 [QGIS]: https://qgis.org/en/site/
-[QGIS image]: https://github.com/rafdouglas/qgis_desktop_docker
+[rafdouglas/qgis_desktop]: https://github.com/rafdouglas/qgis_desktop_docker
 [Lmod]: https://www.tacc.utexas.edu/research-development/tacc-projects/lmod
 
 ## Install
