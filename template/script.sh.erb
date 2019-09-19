@@ -1,9 +1,9 @@
-#!/usr/bin/env bash 
-  
-# Clean the environment 
+#!/usr/bin/env bash
+
+# Clean the environment
 module purge
 
-# Set working directory to PBS directory 
+# Set working directory to PBS directory
 cd "${HOME}"
 
 #
@@ -24,16 +24,8 @@ cd "${HOME}"
 ) &
 
 #
-# Start Stata
+# Start QGIS
 #
 
-# Load the required enviornment
-module load stata
-
-# Launch stat
-xstata-mp
-stata_pid=$(ps | grep 'xstata-mp')
-while true; do
-  ls /proc/${stata_pid}
-  sleep 1/10
-done
+# Run QGIS
+singularity exec ~/Desktop/qgis/qgis.img qgis

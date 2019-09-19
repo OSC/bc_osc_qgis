@@ -41,7 +41,7 @@ attributes:
       - [ "hugemem", ":hugemem"    ]
   version:
     widget: select
-    label: "Stata version"
-    help: "This defines the version of Stata you want to load."
+    label: "QGIS version"
+    help: "This defines the version of QGIS you want to load."
     options:
-     - [ "15", "stata/15" ]
+     - [ "3.8" ]
