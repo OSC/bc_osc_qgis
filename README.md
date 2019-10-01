@@ -15,11 +15,11 @@ OnDemand node):
   CLI used to load appropriate environments within the batch job before
   launching the container.
 - [XFCE] is used to provide the window manager and terminal access if desired
-- [rafdouglas/qgis_desktop] ([GPL licensed](https://github.com/rafdouglas/qgis_desktop_docker/blob/3.8/LICENSE)) which provides [QGIS] version 3.8.0 
+- [OSC/sa_singularity_qgis] which provides [QGIS] version 3.4.12
 
 [Lmod]: https://www.tacc.utexas.edu/research-development/tacc-projects/lmod
 [QGIS]: https://qgis.org/en/site/
-[rafdouglas/qgis_desktop]: https://github.com/rafdouglas/qgis_desktop_docker
+[OSC/sa_singularity_qgis]: https://github.com/OSC/sa_singularity_qgis
 [XFCE]: https://www.xfce.org/
 
 ## Install

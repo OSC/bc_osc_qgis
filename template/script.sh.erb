@@ -1,7 +1,17 @@
 #!/usr/bin/env bash
 
-# Clean the environment
-module purge
+# Load the required environment
+setup_env () {
+  module purge
+
+  # The qgis module should set these environment variables:
+
+  #   QGIS_IMAGE="/usr/local/project/ondemand/singularity/qgis/3.8.sif"
+
+  module use /usr/local/share/lmodfiles/project/ondemand
+  module load xalt/latest qgis
+}
+setup_env
 
 # Set working directory to PBS directory
 cd "${HOME}"
@@ -27,5 +37,4 @@ cd "${HOME}"
 # Start QGIS
 #
 
-# Run QGIS
-singularity exec ~/Desktop/qgis/qgis.img qgis
+singularity run /usr/local/qgis/3.4.12/qgis.sif

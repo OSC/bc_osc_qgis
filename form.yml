@@ -1,7 +1,6 @@
 ---
 cluster: "owens"
 form:
-  - version
   - bc_account
   - bc_num_hours
   - bc_num_slots
@@ -39,9 +38,3 @@ attributes:
     options:
       - [ "any",     ""            ]
       - [ "hugemem", ":hugemem"    ]
-  version:
-    widget: select
-    label: "QGIS version"
-    help: "This defines the version of QGIS you want to load."
-    options:
-     - [ "3.8" ]
