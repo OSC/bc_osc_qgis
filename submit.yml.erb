@@ -22,7 +22,6 @@ script:
   <%- if torque_cluster %>
     resources:
       nodes: "<%= torque_args %>"
-      software: "stata"
   <%- else %>
   <%- slurm_args.each do |arg| %>
     - "<%= arg %>"
