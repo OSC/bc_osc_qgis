@@ -1,7 +1,6 @@
 ---
 cluster:
 - "owens"
-- "owens-slurm"
 form:
   - bc_account
   - bc_num_hours
