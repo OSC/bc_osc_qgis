@@ -6,10 +6,11 @@ setup_env () {
 
   # The qgis module should set these environment variables:
 
-  #   QGIS_IMAGE="/usr/local/project/ondemand/singularity/qgis/3.8.sif"
+  # OSC_QGIS_DIR="/path/to/qgis/container"
 
-  module use /usr/local/share/lmodfiles/project/ondemand
-  module load xalt/latest qgis
+  module load xalt/latest
+  module load <%= context.version %>
+
 }
 setup_env
 
@@ -37,4 +38,4 @@ cd "${HOME}"
 # Start QGIS
 #
 
-singularity run /usr/local/qgis/3.4.12/qgis.sif
+singularity run $OSC_QGIS_DIR/qgis.sif
