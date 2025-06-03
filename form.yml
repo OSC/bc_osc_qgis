@@ -1,6 +1,5 @@
 ---
 cluster:
-- "owens"
 - "pitzer"
 attributes:
   num_cores:
@@ -8,8 +7,7 @@ attributes:
     label: "Number of cores"
     value: 1
     help: |
-      Number of cores on node type (4 GB per core unless requesting whole
-      node). Leave blank if requesting full node.
+      Number of cores on node type to get 4 GB of RAM per core.
     min: 1
     max: 28
     step: 1
@@ -41,8 +39,6 @@ attributes:
     options:
       - [
         "any",     "any",
-        data-min-num-cores-for-cluster-owens: 1,
-        data-max-num-cores-for-cluster-owens: 28,
         data-min-num-cores-for-cluster-pitzer: 1,
         data-max-num-cores-for-cluster-pitzer: 48,
       ]
@@ -50,12 +46,9 @@ attributes:
         "48 core",     "any-48core",
         data-min-num-cores-for-cluster-pitzer: 1,
         data-max-num-cores-for-cluster-pitzer: 48,
-        data-option-for-cluster-owens: false,
       ]
       - [
         "any gpu",     "gpu",
-        data-min-num-cores-for-cluster-owens: 1,
-        data-max-num-cores-for-cluster-owens: 28,
         data-min-num-cores-for-cluster-pitzer: 1,
         data-max-num-cores-for-cluster-pitzer: 48,
       ]
@@ -63,29 +56,21 @@ attributes:
         "48 core gpu",     "gpu-48core",
         data-min-num-cores-for-cluster-pitzer: 1,
         data-max-num-cores-for-cluster-pitzer: 48,
-        data-option-for-cluster-owens: false,
       ]
       - [
         "largemem", "largemem",
         data-min-num-cores-for-cluster-pitzer: 24,
         data-max-num-cores-for-cluster-pitzer: 48,
-        data-option-for-cluster-owens: false,
       ]
       - [
         "hugemem", "hugemem",
-        data-min-num-cores-for-cluster-owens: 4,
-        data-max-num-cores-for-cluster-owens: 48,
         data-min-num-cores-for-cluster-pitzer: 20,
         data-max-num-cores-for-cluster-pitzer: 80,
       ]
       - [
         "debug",   "debug",
-        data-min-num-cores-for-cluster-owens: 1,
-        data-max-num-cores-for-cluster-owens: 28,
         data-min-num-cores-for-cluster-pitzer: 1,
         data-max-num-cores-for-cluster-pitzer: 48,
-        data-option-for-cluster-owens: false,
-        data-option-for-cluster-pitzer: false,
       ]
   version:
       widget: "select"
