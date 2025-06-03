@@ -72,21 +72,15 @@ attributes:
         data-min-num-cores-for-cluster-pitzer: 1,
         data-max-num-cores-for-cluster-pitzer: 48,
       ]
-  version:
-      widget: "select"
-      label: "QGIS Version"
-      options:
-        - [ "3.4.12",  "qgis/3.4.12" ]
-        - [ "3.16.14",  "qgis/3.16.14" ]
-        - [ "3.22.1",  "qgis/3.22.1" ]
-        - [ "3.22.8",  "qgis/3.22.8" ]
+  auto_modules_qgis:
+    default: false
 form:
   - auto_accounts
   - bc_num_hours
   - bc_num_slots
   - num_cores
   - node_type
-  - version
+  - auto_modules_qgis
   - bc_vnc_resolution
   - bc_email_on_started
       
