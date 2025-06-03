@@ -5,7 +5,7 @@
 # The qgis module should set these environment variables:
 # OSC_QGIS_DIR="/path/to/qgis/container"
 
-module load <%= context.version %>
+module load <%= context.auto_modules_qgis %>
 
 # Set working directory to PBS directory
 cd "${HOME}"
