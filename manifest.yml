@@ -4,8 +4,8 @@ category: Interactive Apps
 subcategory: GUIs
 role: batch_connect
 description: |
-  This app will launch a [QGIS] GUI on the [Owens cluster]. You will be able to interact with the QGIS GUI
+  This app will launch a [QGIS] GUI on the [Pitzer cluster]. You will be able to interact with the QGIS GUI
   through a VNC session.
 
   [QGIS]: https://qgis.org/en/site/
-  [Owens cluster]: https://www.osc.edu/resources/technical_support/supercomputers/owens
+  [Pitzer cluster]: https://www.osc.edu/resources/technical_support/supercomputers/pitzer
