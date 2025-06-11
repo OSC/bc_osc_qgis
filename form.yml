@@ -1,6 +1,7 @@
 ---
 cluster:
-- "pitzer"
+  - "pitzer"
+  - "pitzer-rhel9"
 attributes:
   num_cores:
     widget: "number_field"
@@ -39,38 +40,38 @@ attributes:
     options:
       - [
         "any",     "any",
-        data-min-num-cores-for-cluster-pitzer: 1,
-        data-max-num-cores-for-cluster-pitzer: 48,
+        data-min-num-cores: 1,
+        data-max-num-cores: 48,
       ]
       - [
         "48 core",     "any-48core",
-        data-min-num-cores-for-cluster-pitzer: 1,
-        data-max-num-cores-for-cluster-pitzer: 48,
+        data-min-num-cores: 1,
+        data-max-num-cores: 48,
       ]
       - [
         "any gpu",     "gpu",
-        data-min-num-cores-for-cluster-pitzer: 1,
-        data-max-num-cores-for-cluster-pitzer: 48,
+        data-min-num-cores: 1,
+        data-max-num-cores: 48,
       ]
       - [
         "48 core gpu",     "gpu-48core",
-        data-min-num-cores-for-cluster-pitzer: 1,
-        data-max-num-cores-for-cluster-pitzer: 48,
+        data-min-num-cores: 1,
+        data-max-num-cores: 48,
       ]
       - [
         "largemem", "largemem",
-        data-min-num-cores-for-cluster-pitzer: 24,
-        data-max-num-cores-for-cluster-pitzer: 48,
+        data-min-num-cores: 24,
+        data-max-num-cores: 48,
       ]
       - [
         "hugemem", "hugemem",
-        data-min-num-cores-for-cluster-pitzer: 20,
-        data-max-num-cores-for-cluster-pitzer: 80,
+        data-min-num-cores: 20,
+        data-max-num-cores: 80,
       ]
       - [
         "debug",   "debug",
-        data-min-num-cores-for-cluster-pitzer: 1,
-        data-max-num-cores-for-cluster-pitzer: 48,
+        data-min-num-cores: 1,
+        data-max-num-cores: 48,
       ]
   auto_modules_qgis:
     default: false
