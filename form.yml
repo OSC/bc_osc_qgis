@@ -1,7 +1,6 @@
 ---
 cluster:
   - "pitzer"
-  - "pitzer-rhel9"
 attributes:
   num_cores:
     widget: "number_field"
