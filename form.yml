@@ -9,10 +9,9 @@ form:
   - bc_num_hours
   - bc_vnc_resolution
   - bc_email_on_started
+  - global_default_values
 attributes:
   auto_modules_qgis:
     default: false
   bc_vnc_resolution:
     required: true
-  global_job_type:
-    hide_by_default: true
