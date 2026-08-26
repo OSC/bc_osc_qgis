@@ -1,11 +1,20 @@
 <%-
+  ppn = num_cores.to_i
+  nodes = bc_num_slots.blank? ? 1 : bc_num_slots.to_i
+  partition = []
+
+  if node_type == 'hugemem'
+    partition_str = bc_num_slots.to_i > 1 ? "hugemem-parallel" : "hugemem"
+    partition = [ "--partition", partition_str ]
+  end
+
+  slurm_args = partition + [ "--nodes", "#{nodes}", "--ntasks-per-node", "#{ppn}" ]
 %>
 ---
 batch_connect:
   template: vnc
 script:
   native:
-  - "--ntasks-per-node"
-  - "<%= global_num_cores.to_i %>"
-  - "--partition"
-  - "batch"
+  <%- slurm_args.each do |arg| %>
+    - "<%= arg %>"
+  <%- end %>
